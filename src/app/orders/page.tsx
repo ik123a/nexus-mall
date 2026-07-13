@@ -11,7 +11,7 @@ import { CommandMenu } from "@/components/search/command-menu";
 import { Toaster } from "@/components/ui/toaster";
 
 // Demo orders
-const orders = [
+const orders: Array<{ id: string; date: string; status: "delivered" | "shipped" | "processing"; items: number; total: number; tracking: string; eta: string }> = [
   { id: "NX-2024-001", date: "Jul 6, 2026", status: "delivered", items: 3, total: 2498, tracking: "1Z999AA10123456784", eta: "Delivered" },
   { id: "NX-2024-002", date: "Jul 3, 2026", status: "shipped", items: 1, total: 449, tracking: "1Z999AA10123456785", eta: "Jul 8" },
   { id: "NX-2024-003", date: "Jul 1, 2026", status: "processing", items: 2, total: 1438, tracking: "1Z999AA10123456786", eta: "Jul 10" },

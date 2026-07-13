@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, X, MessageSquare, Image as ImgIcon, Search } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { products } from "@/constants/products";
 import { useRouter } from "next/navigation";
 import { Navbar } from "@/components/layout/navbar";

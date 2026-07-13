@@ -10,7 +10,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-const tiers = [
+const tiers: Array<{
+  id: string;
+  name: string;
+  price: number;
+  period: string;
+  color: string;
+  border: string;
+  icon: typeof Crown;
+  badge: string;
+  features: string[];
+  cta: string;
+  ctaVariant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | "premium";
+}> = [
   {
     id: "bronze",
     name: "Bronze",

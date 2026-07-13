@@ -111,7 +111,7 @@ export function AIAssistant() {
                             onClick={() => { setOpen(false); router.push(`/product/${p.id}`); }}
                             className="flex items-center gap-2 w-full p-2 rounded-xl bg-white/5 hover:bg-white/10 transition"
                           >
-                            <image src={p.image} alt={p.name} className="w-10 h-10 rounded-lg object-cover" />
+                            <Image src={p.image} alt={p.name} width={40} height={40} className="w-10 h-10 rounded-lg object-cover" />
                             <div className="text-left">
                               <div className="text-xs.font-medium truncate">{p.name}</div>
                               <div className="text-[10px] text-white/60">${p.price}</div>

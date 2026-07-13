@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Heart, Eye, Share2, ChevronLeft, ChevronRight, Star,
+  Heart, Eye, Share2, ChevronLeft, ChevronRight as ChevronRightIcon, Star,
   Truck, Shield, Sparkles, Minus, Plus, X,
 } from "lucide-react";
 import Link from "next/link";
@@ -43,13 +43,13 @@ export function ProductPageClient({ product }: { product: Product }) {
         {/* Breadcrumbs */}
         <nav className="mb-8 flex items-center gap-2 text-xs text-white/40" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-white/70 transition">Home</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRightIcon className="w-3 h-3" />
           <Link href="/shop" className="hover:text-white/70 transition">Shop</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRightIcon className="w-3 h-3" />
           <Link href={`/shop?category=${product.category}`} className="hover:text-white/70 transition">
             {product.category}
           </Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRightIcon className="w-3 h-3" />
           <span className="text-white/30 line-clamp-1">{product.name}</span>
         </nav>
 
