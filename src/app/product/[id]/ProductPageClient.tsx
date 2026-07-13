@@ -12,7 +12,12 @@ import { Product } from "@/types";
 import { products, getRelated } from "@/constants/products";
 import { useCart } from "@/store/use-cart";
 import { formatPrice, calculateDiscount } from "@/lib/utils";
-import { ProductViewer3D } from "@/components/three/product-viewer";
+import dynamic from "next/dynamic";
+
+const ProductViewer3D = dynamic(
+  () => import("@/components/three/product-viewer").then((mod) => mod.ProductViewer3D),
+  { ssr: false }
+);
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";

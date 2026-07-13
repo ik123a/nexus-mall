@@ -1,8 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MallScene } from "@/components/three/mall-scene";
 import { Button } from "@/components/ui/button";
+import dynamic from "next/dynamic";
+
+const MallScene = dynamic(
+  () => import("@/components/three/mall-scene").then((mod) => mod.MallScene),
+  { ssr: false }
+);
 import { ArrowRight, Zap, Crown, Sparkles, Shield, Truck, BadgePercent } from "lucide-react";
 import Link from "next/link";
 
