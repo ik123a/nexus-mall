@@ -18,7 +18,7 @@
 
 **NEXUS MALL** is a next-generation immersive e-commerce platform built with Next.js 15, React 19, and Three.js. It reimagines online shopping by combining a 3D virtual mall experience with AI-powered assistance, voice search, and real-time 3D product visualization.
 
-> 🚀 **Live Demo**: [vercel.com/ik123as-projects/nexus-mall](https://vercel.com/ik123as-projects/nexus-mall)
+> 🚀 **Live Demo**: [nexus-mall.vercel.app](https://nexus-mall.vercel.app)
 
 ---
 
