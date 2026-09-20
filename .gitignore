@@ -83,3 +83,5 @@ local.properties
 .turbo/
 /.next/cache/webpack/client-production/0.pack
 /node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node
+
+/.next/cache/webpack/client-production/0.pack
