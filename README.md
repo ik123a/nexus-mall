@@ -126,23 +126,11 @@ src/
 
 ## 📸 Screenshots
 
-### Homepage — Hero & 3D Scene
-![Homepage](demo-assets/homepage.jpg)
 
-### 3D Virtual Mall
-![3D Mall](demo-assets/mall.jpg)
 
-### Product Catalog (Shop)
-![Shop](demo-assets/shop.jpg)
 
-### 3D Product Viewer
-![Product Viewer](demo-assets/product-viewer.jpg)
 
-### AI Concierge
-![AI Assistant](demo-assets/assistant.jpg)
 
-### Voice Search
-![Voice Search](demo-assets/search.jpg)
 
 ---
 
@@ -211,7 +199,7 @@ CMD ["npm", "start"]
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+No LICENSE file has been added to this repository yet, so no license is currently granted. Add one before reusing this code.
 
 ---
 
