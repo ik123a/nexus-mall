@@ -67,7 +67,7 @@ export function Navbar() {
               <Zap className="w-3.5 h-3.5" />
               Events
             </Link>
-            <Link href="/offers" className={linkClass}>Offers</Link>
+            <Link href="/coupons" className={linkClass}>Offers</Link>
           </div>
 
           {/* Actions */}

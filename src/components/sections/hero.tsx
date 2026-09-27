@@ -59,7 +59,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl sm:text-7xl lg:text-8xl font-display font-black tracking-tight leading-[0.95] mb-6"
+            className="text-4xl sm:text-6xl lg:text-7xl font-display font-black tracking-tight leading-[0.95] mb-6"
           >
             The Future of
             <br />
