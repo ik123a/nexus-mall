@@ -14,10 +14,10 @@ import Image from "next/image";
 
 const events = [
   { title: "Fashion Week Runway 2026", category: "Fashion", date: "Jul 12, 2026", time: "7:00 PM", location: "Atrium, 5th Floor", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80", att: 2400 },
-  { title: "Quantum Lens AR Launch", category: "Tech", date: "Jul 14, 2026", time: "6:30 PM", location: "NE0 Arcade", image: "https://images.unsplash.com/photo-1572635196237-34b9ada94842?w=800&q=80", att: 1200 },
-  { title: "Beauty Masterclass with Aura", category: "Beauty", date: "Jul 16, 2026", time: "11:00 AM", location: "Aura Studio", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab9be?w=800&q=80", att: 850 },
-  { title: "Michelin Chefs Tasting Night", category: "Food", date: "Jul 18, 2026", time: "7:30 PM", location: "Skyfood Court", image: "https://images.unsplash.com/photo-1517248135467-3c73898e0a05?w=800&q=80", att: 320 },
-  { title: "Diamond Atelier Reveal", category: "Jewelry", date: "Jul 20, 2026", time: "5:00 PM", location: "Solis Jewels", image: "https://images.unsplash.com/photo-1515562140728-774106c84e0c?w=800&q=80", att: 240 },
+  { title: "Quantum Lens AR Launch", category: "Tech", date: "Jul 14, 2026", time: "6:30 PM", location: "NE0 Arcade", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80", att: 1200 },
+  { title: "Beauty Masterclass with Aura", category: "Beauty", date: "Jul 16, 2026", time: "11:00 AM", location: "Aura Studio", image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80", att: 850 },
+  { title: "Michelin Chefs Tasting Night", category: "Food", date: "Jul 18, 2026", time: "7:30 PM", location: "Skyfood Court", image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80", att: 320 },
+  { title: "Diamond Atelier Reveal", category: "Jewelry", date: "Jul 20, 2026", time: "5:00 PM", location: "Solis Jewels", image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80", att: 240 },
   { title: "Running Masterclass with Pro Athletes", category: "Sports", date: "Jul 22, 2026", time: "9:00 AM", location: "Pulse Atrium", image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80", att: 560 },
 ];
 

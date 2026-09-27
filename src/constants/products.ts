@@ -24,7 +24,7 @@ export const products: Product[] = [
   {
     id: "p-003", name: "Quantum Lens AR Glasses", brand: "Quantum", category: "tech",
     price: 1299, comparePrice: 1599, rating: 4.7, reviews: 892,
-    image: img("1572635196237-34b9ada94842"), description: "Mixed-reality glasses with neural interface.",
+    image: img("1523275335684-37898b6baf30"), description: "Mixed-reality glasses with neural interface.",
     features: ["Neural Interface", "8K Micro-OLED", "Eye Tracking", "Hand Tracking", "Prescription Ready"],
     inStock: true, isNew: true,
     colors: ["#050505", "#1a1a1a"], sizes: ["One Size"], tags: ["ar", "xr", "future"],
@@ -41,7 +41,7 @@ export const products: Product[] = [
   {
     id: "p-005", name: "Aurora Silk Dress", brand: "LUXE", category: "fashion",
     price: 890, comparePrice: 1200, rating: 4.8, reviews: 678,
-    image: img("1566206095992-df2d4c4a1723"), description: "Flowing silk dress with iridescent finish.",
+    image: img("1595777457583-95e059d581b8"), description: "Flowing silk dress with iridescent finish.",
     features: ["100% Silk", "Iridescent Finish", "Reinforced Seams"],
     inStock: true,
     colors: ["#10b981", "#ec4899", "#050505"],
@@ -59,7 +59,7 @@ export const products: Product[] = [
   {
     id: "p-007", name: "Pulse Smart Home Gym", brand: "Pulse", category: "sports",
     price: 2499, comparePrice: 2999, rating: 4.7, reviews: 234,
-    image: img("1571902943202-ea44e2e80d1a"), description: "AI-coached resistance system in one pillar.",
+    image: img("1534438327276-14e5300c3a48"), description: "AI-coached resistance system in one pillar.",
     features: ["AI Coach", "200lb Resistance", "Live Classes", "Space-saving"],
     inStock: true, isNew: true,
     colors: ["#050505"], sizes: ["Standard"], tags: ["fitness", "home-gym", "ai"],
@@ -67,7 +67,7 @@ export const products: Product[] = [
   {
     id: "p-008", name: "Solis Diamond Solitaire", brand: "Solis", category: "jewelry",
     price: 8500, rating: 5.0, reviews: 89,
-    image: img("1605100804763-bb79e7e8a2b1"), description: "2.5ct lab-grown diamond, platinum band.",
+    image: img("1599643478518-a784e5dc4c8f"), description: "2.5ct lab-grown diamond, platinum band.",
     features: ["2.5ct Lab Diamond", "VS1 Clarity", "Platinum Band", "GIA Certified"],
     inStock: true,
     colors: ["#ffffff"], sizes: ["4", "5", "6", "7", "8"], tags: ["jewelry", "diamond", "luxury"],
@@ -84,7 +84,7 @@ export const products: Product[] = [
   {
     id: "p-010", name: "Nexus Vision Pro TV", brand: "Quantum", category: "electronics",
     price: 3499, comparePrice: 4299, rating: 4.9, reviews: 412,
-    image: img("1593359677877-a8135d6f4e0c"), description: "85\" 8K OLED with transparent mode.",
+    image: img("1527443224154-c4a3942d3acf"), description: "85\" 8K OLED with transparent mode.",
     features: ["85\" 8K OLED", "Transparent Mode", " Dolby Atmos", "AI Upscaling"],
     inStock: true, isNew: true,
     colors: ["#050505"], sizes: ["65\"", "75\"", "85\""], tags: ["tv", "electronics", "8k"],
@@ -92,7 +92,7 @@ export const products: Product[] = [
   {
     id: "p-011", name: "Aura Glow Serum", brand: "Aura", category: "beauty",
     price: 120, comparePrice: 160, rating: 4.8, reviews: 8943,
-    image: img("1620916566398-39f1143ab9be"), description: "Niacinamide + peptide night serum.",
+    image: img("1571781926291-c477ebfd024b"), description: "Niacinamide + peptide night serum.",
     features: ["5% Niacinamide", "Peptide Complex", "Vegan", "Dermatologist Tested"],
     inStock: true, isTrending: true,
     colors: [], sizes: ["30ml", "50ml"], tags: ["beauty", "skincare", "serum"],
@@ -109,7 +109,7 @@ export const products: Product[] = [
   {
     id: "p-013", name: "Quantum X1 Drone", brand: "Quantum", category: "electronics",
     price: 1299, rating: 4.7, reviews: 234,
-    image: img("1473962997488-939e91204976"), description: "8K cinematic drone with AI tracking.",
+    image: img("1473968512647-3e447244af8f"), description: "8K cinematic drone with AI tracking.",
     features: ["8K Camera", "AI Subject Tracking", "40min Flight", "10km Range"],
     inStock: true, isNew: true,
     colors: ["#050505"], sizes: ["Standard"], tags: ["drone", "electronics", "camera"],
@@ -117,7 +117,7 @@ export const products: Product[] = [
   {
     id: "p-014", name: "Maison Noir Leather Bag", brand: "Maison Noir", category: "luxury",
     price: 3200, rating: 4.9, reviews: 67,
-    image: img("1584917895428-46d410e41eac"), description: "Hand-burnished full-grain leather tote.",
+    image: img("1590874103328-eac38a683ce7"), description: "Hand-burnished full-grain leather tote.",
     features: ["Full-grain Leather", "Gold Hardware", "Hand-crafted", "Lifetime Warranty"],
     inStock: true,
     colors: ["#1a1a1a", "#4a3a2a"], sizes: ["Standard"], tags: ["luxury", "bag", "leather"],
@@ -125,7 +125,7 @@ export const products: Product[] = [
   {
     id: "p-015", name: "Neo VR Arena Headset", brand: "Neo", category: "gaming",
     price: 599, comparePrice: 749, rating: 4.8, reviews: 1834,
-    image: img("1622979155298-3167f4f4a7c1"), description: "Wireless VR with 120Hz pancake lenses.",
+    image: img("1592478411213-6153e4ebc07d"), description: "Wireless VR with 120Hz pancake lenses.",
     features: ["120Hz Pancake Lenses", "Wireless PC VR", "Eye Tracking", "4K per eye"],
     inStock: true, isNew: true, isTrending: true,
     colors: ["#050505", "#10b981"], sizes: ["Standard"], tags: ["gaming", "vr", "xr"],
@@ -133,7 +133,7 @@ export const products: Product[] = [
   {
     id: "p-016", name: "Aurora Lip Collection", brand: "Aura", category: "beauty",
     price: 85, rating: 4.7, reviews: 4521,
-    image: img("1596422846543-75e73977ab94"), description: "6-shade holographic lip set.",
+    image: img("1586495777744-4413f21062fa"), description: "6-shade holographic lip set.",
     features: ["6 Shades", "Holographic", "Long-wear", "Cruelty-free"],
     inStock: true,
     colors: [], sizes: ["Set"], tags: ["beauty", "makeup", "lips"],

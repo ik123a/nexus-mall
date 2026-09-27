@@ -41,7 +41,7 @@ const teamMembers = [
   { name: "SOFIA ANDERS", role: "Brand Director", img: "1544005313-94ddf0286df2" },
   { name: "ETHAN KUMAR", role: "Head of AI", img: "1507003211169-0a1dd7228f2d" },
   { name: "ZARA BENALI", role: "VP Customer", img: "1487412720507-e7ab37603c6f" },
-  { name: "KYLE TANAKA", role: "CTO", img: "1519085360753-3697979229c2" },
+  { name: "KYLE TANAKA", role: "CTO", img: "1494790108377-be9c29b29330" },
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
