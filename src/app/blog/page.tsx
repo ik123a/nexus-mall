@@ -10,15 +10,7 @@ import { Button } from "@/components/ui/button";
 import { CommandMenu } from "@/components/search/command-menu";
 import { Toaster } from "@/components/ui/toaster";
 import Image from "next/image";
-
-const posts = [
-  { slug: "spring-2026-trends", category: "Trends", title: "The 10 Trends Defining Spring 2026", excerpt: "From holographic fabrics to AI-generated silhouettes, here's what's next.", author: "Marie Laurent", date: "Jul 5, 2026", readTime: "6 min", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" },
-  { slug: "behind-luxe", category: "Behind the Scenes", title: "Inside LUXE Atelier: Crafting the Future", excerpt: "A rare look at the atelier where haute couture meets advanced materials science.", author: "James Chen", date: "Jul 2, 2026", readTime: "8 min", image: "https://images.unsplash.com/photo-1609081214828-98e1b6b6e1c3?w=800&q=80" },
-  { slug: "quantum-lens", category: "Tech", title: "Quantum Lens AR: The Future Is Transparent", excerpt: "How mixed-reality glasses are changing the way we shop, work, and play.", author: "Dr. Sarah Kim", date: "Jun 28, 2026", readTime: "5 min", image: "https://images.unsplash.com/photo-1572635196237-34b9ada94842?w=800&q=80" },
-  { slug: "beauty-science", category: "Beauty", title: "The Science of Glow: Aura's Peptide Breakthrough", excerpt: "Why dermatologists are calling this serum the most innovative of the decade.", author: "Dr. Priya Sharma", date: "Jun 25, 2026", readTime: "4 min", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab9be?w=800&q=80" },
-  { slug: "home-ai", category: "Style", title: "Studio Home: When AI Designs Your Living Room", excerpt: "We tested the AI room designer — the results were surprisingly personal.", author: "Alex Rivera", date: "Jun 20, 2026", readTime: "7 min", image: "https://images.unsplash.com/photo-1556228453-efd6901fdbca?w=800&q=80" },
-  { slug: "sustainable-luxury", category: "Trends", title: "Sustainable Luxury Is No Longer an Oxymoron", excerpt: "How NEXUS brands are proving that opulence and ecology can coexist.", author: "Emma Watson", date: "Jun 15, 2026", readTime: "6 min", image: "https://images.unsplash.com/photo-1542838132-7c767ae3e0c2?w=800&q=80" },
-];
+import { posts } from "./posts";
 
 export default function BlogPage() {
   return (
