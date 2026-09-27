@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 import { ChevronDown, ChevronUp, Package, Truck, RotateCcw, CheckCircle, Clock, Mail, ArrowRight, HelpCircle } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -205,11 +206,14 @@ export default function ReturnsPage() {
                 Head to your orders page, select the items, and get your QR code instantly.
               </p>
               <Button size="xl" variant="premium" className="gap-3" asChild>
-                <a href="/account/orders">
+                {/* Was /account/orders, which does not exist -- this 404'd.
+                    Orders live at /orders. A raw <a> also bypassed the
+                    client-side router, so it was a full page load. */}
+                <Link href="/orders">
                   <RotateCcw className="w-5 h-5" />
                   Start a Return
                   <ArrowRight className="w-5 h-5" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
