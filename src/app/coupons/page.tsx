@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Copy, Clock, Tag, Sparkles, Tag as TagIcon, Percent, Zap, BadgeCheck, Shield } from "lucide-react";
+import { Copy, Clock, Tag, Sparkles, Tag as TagIcon, Percent, Zap, BadgeCheck, Shield, Flame } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -32,6 +33,14 @@ export default function CouponsPage() {
               Active <span className="text-gradient">Coupons</span>
             </h1>
             <p className="text-white/50">Stack savings on top of sales. Applied automatically at checkout.</p>
+            {/* This page used to be labelled "Offers" in the nav, which is how
+                /offers came to look like it should exist. They are different:
+                these are codes you enter, /offers is what is already reduced. */}
+            <Button variant="outline" size="sm" asChild className="mt-4">
+              <Link href="/offers">
+                <Flame className="w-4 h-4 mr-2" /> See what&apos;s already reduced
+              </Link>
+            </Button>
           </motion.div>
 
           {/* Featured banner */}

@@ -145,6 +145,24 @@ export const getProductById = getProduct;
 export const getProductsByCategory = (cat: string) => products.filter((p) => p.category === cat);
 export const getTrending = () => products.filter((p) => p.isTrending);
 export const getNewArrivals = () => products.filter((p) => p.isNew);
+
+/**
+ * Products carrying a genuine markdown, cheapest percentage off first.
+ *
+ * A product counts as "on offer" only when comparePrice exists AND is
+ * actually higher than price -- a comparePrice below price would render as a
+ * negative discount, which is nonsense rather than a deal. This backs the
+ * /offers page, which previously had no route at all.
+ */
+export const getOnOffer = () =>
+  products
+    .filter((p) => typeof p.comparePrice === "number" && p.comparePrice! > p.price)
+    .map((p) => ({
+      ...p,
+      discountPct: Math.round(((p.comparePrice! - p.price) / p.comparePrice!) * 100),
+    }))
+    .sort((a, b) => b.discountPct - a.discountPct);
+
 export const getRelated = (id: string, n = 4) => {
   const p = getProduct(id);
   if (!p) return [];

@@ -80,11 +80,16 @@ export function ProductCard({ product, index = 0 }: Props) {
           <span>({product.reviews.toLocaleString()})</span>
         </div>
 
-        {/* Price */}
+        {/* Price. The currency symbol here was "$" while every other price in
+            the app renders "₹" (shop, product page, offers banner) — the same
+            product showed two different currencies. */}
         <div className="flex items-baseline gap-2 mb-4">
-          <span className="text-lg font-bold">${product.price.toLocaleString()}</span>
-          {product.comparePrice && (
-            <span className="text-sm text-white/30 line-through">${product.comparePrice.toLocaleString()}</span>
+          <span className="text-lg font-bold">₹{product.price.toLocaleString()}</span>
+          {product.comparePrice && product.comparePrice > product.price && (
+            <>
+              <span className="text-sm text-white/30 line-through">₹{product.comparePrice.toLocaleString()}</span>
+              <span className="text-xs text-red-400 font-medium">-{discount}%</span>
+            </>
           )}
         </div>
 

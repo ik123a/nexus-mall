@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ShoppingCart, Heart, User, Menu, X, Zap, Crown, Gamepad2, Sparkles } from "lucide-react";
+import { Search, ShoppingCart, Heart, User, Menu, X, Zap, Crown, Gamepad2, Sparkles, Flame } from "lucide-react";
 import { useCart, useCartTotals } from "@/store/use-cart";
 import { useUI } from "@/store/use-ui";
 import { categories } from "@/constants/categories";
@@ -67,7 +67,15 @@ export function Navbar() {
               <Zap className="w-3.5 h-3.5" />
               Events
             </Link>
-            <Link href="/coupons" className={linkClass}>Offers</Link>
+            {/* Two different ideas, previously one link. "Offers" is what is
+                already reduced (/offers); "Coupons" are promo codes applied at
+                checkout (/coupons). Labelling the coupons page "Offers" is
+                what made /offers look like it should exist. */}
+            <Link href="/offers" className={linkClass}>
+              <Flame className="w-3.5 h-3.5" />
+              Offers
+            </Link>
+            <Link href="/coupons" className={linkClass}>Coupons</Link>
           </div>
 
           {/* Actions */}
