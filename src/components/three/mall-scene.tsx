@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Float, Environment, ContactShadows, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, Float, ContactShadows, PerspectiveCamera } from "@react-three/drei";
 import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import { Suspense, useRef, useMemo } from "react";
@@ -195,7 +195,7 @@ export function MallScene({ interactive = false }: { interactive?: boolean }) {
         <FloatingProduct position={[3, 4, -4]} color="#34d399" scale={0.7} />
         <FloatingProduct position={[-3, 1.5, 4]} color="#ec4899" scale={0.6} />
         <Particles count={250} />
-        <Environment preset="night" />
+        {/* Local lights keep the scene available when external HDR hosts are offline. */}
         <ContactShadows position={[0, -0.5, 0]} opacity={0.5} scale={20} blur={2} far={10} color="#000000" />
       </Suspense>
 
